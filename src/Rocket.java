@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Rocket {
     String rocketId;
-    List<Propellants> propeList = new ArrayList<Propellants>();
+    List<Propellants> propellantList = new ArrayList<Propellants>();
 
 
     public Rocket(String rocketId) throws Exception {
@@ -20,11 +20,11 @@ public class Rocket {
     }
 
 
-    public void setPropeList(int i) {
-        propeList.add(new Propellants(i));
+    public void addPropellantList(int i) throws Exception {
+        propellantList.add(new Propellants(i));
     }
 
-    public List<Propellants> getPropeList() {
-        return propeList;
+    public List<Propellants> getPropellantList() {
+        return propellantList;
     }
 }
